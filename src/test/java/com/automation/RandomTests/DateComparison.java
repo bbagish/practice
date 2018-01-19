@@ -1,29 +1,30 @@
 package com.automation.RandomTests;
 
 
-import static org.testng.Assert.assertEquals;
+
+import static org.junit.Assert.*;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 public class DateComparison {
 	WebDriver driver;
 	public static String todaysDate;
 
-	@BeforeTest
+	@Before
 	public void setUP() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void getDataFromGoogle() throws InterruptedException {
 		driver.get("http://www.google.com");
 		driver.findElement(By.id("lst-ib")).sendKeys("today's date" + Keys.ENTER);
@@ -31,7 +32,7 @@ public class DateComparison {
 		String todaysDate = driver.findElement(By.xpath("//div[@class='vk_bk vk_ans']")).getText();
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void calendarDate() {
 		driver.get("https://www.calendardate.com/");
 		String cdDate = driver.findElement(By.xpath("/html/body/header/div")).getText();
@@ -41,7 +42,7 @@ public class DateComparison {
 
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void todaysDate() {
 		driver.get("http://todays-date.net");
 		String tdDate = driver.findElement(By.xpath("//*[@id=\"date\"]")).getText();
@@ -50,7 +51,7 @@ public class DateComparison {
 
 	}
 
-	@AfterTest
+	@After
 	public void close() {
 		driver.quit();
 	}

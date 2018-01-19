@@ -1,31 +1,31 @@
 package com.automation.RandomTests;
 
-import static org.testng.Assert.assertTrue;
+
+
+import static org.junit.Assert.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import pages.AmazonP;
-import pages.EtsyP;
+
+
+import com.automation.Pages.*;
 
 public class WoodenSpoonMac {
 	static WebDriver driver;
 	public static final String URL = "http://localhost:4444/wd/hub";
 
-	@BeforeClass
+	@Before
 	public void setUP() throws MalformedURLException {
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "macOS 10.13");
@@ -59,7 +59,7 @@ public class WoodenSpoonMac {
 
 	}
 
-	@AfterClass
+	@After
 	public void tearDown() {
 		driver.quit();
 	}

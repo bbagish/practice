@@ -1,6 +1,6 @@
 package com.automation.Arrays;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class MultiDimentionalArray {
   @Test

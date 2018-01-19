@@ -1,4 +1,6 @@
-package Password;
+package com.automation.Utils;
+
+
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;

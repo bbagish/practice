@@ -1,4 +1,6 @@
-package Password;
+package com.automation.Utils;
+
+
 import java.security.NoSuchAlgorithmException;
 
 import javax.crypto.KeyGenerator;

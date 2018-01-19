@@ -2,7 +2,6 @@ package com.automation.StringsAndLoops;
 import java.util.List;
 import java.util.Scanner;
 
-import org.testng.annotations.Test;
 
 public class Reverso {
 	public static void main(String[] args) {

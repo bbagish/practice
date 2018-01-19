@@ -3,17 +3,18 @@ package com.automation.RandomTests;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
 
 public class ListOfElements {
 	WebDriver driver;
 
-	@BeforeTest
+	@Before
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Bagishman/Documents/Libraries/driver/chromedriver.exe");
 		driver = new ChromeDriver();

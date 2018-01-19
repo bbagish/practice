@@ -1,12 +1,12 @@
 package com.automation.RandomTests;
 import java.util.List;
 
+import org.junit.After;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
 
 public class W3 {
 WebDriver driver=new ChromeDriver();
@@ -21,7 +21,7 @@ public void test() {
 		System.out.println(lists.getText()+" "+lists.getAttribute("href"));
 	}
 }
-@AfterTest
+@After
 public void tearDown() {
 	driver.quit();
 }
