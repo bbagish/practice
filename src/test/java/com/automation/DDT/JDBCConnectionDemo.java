@@ -1,4 +1,4 @@
-package com.automation.JDBC;
+package com.automation.DDT;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

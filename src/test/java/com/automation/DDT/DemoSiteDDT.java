@@ -1,4 +1,4 @@
-package com.automation.Arrays;
+package com.automation.DDT;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

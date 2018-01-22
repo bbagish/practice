@@ -1,4 +1,4 @@
-package simpleDDT;
+package com.automation.DDT;
 
 import java.io.FileInputStream;
 import java.util.concurrent.TimeUnit;

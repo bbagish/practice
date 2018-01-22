@@ -1,4 +1,4 @@
-package com.automation.Arrays;
+package com.automation.DDT;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

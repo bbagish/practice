@@ -1,9 +1,9 @@
 package com.automation.StringsAndLoops;
 
-public class ObamaFinder {
+public class WordFinder {
 public static void main(String[] args) {
-	String[] nameArray={"John smith", "dave job", "Sen Peterson", "Barack Obama", "Bush Something"};
-	String target="Obama";
+	String[] nameArray={"John smith", "dave job", "Sen Peterson", "word", "Bush Something"};
+	String target="word";
 	int [] intArr={1,2,3,4,5};
 	String[] strArr={"a", "b", "c", "d"};
 	for(int i : intArr){

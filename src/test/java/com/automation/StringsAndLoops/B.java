@@ -1,6 +1,7 @@
 package com.automation.StringsAndLoops;
 
 class B{
+
 	public static int solution(int N) {
 	     String binRep = Integer.toBinaryString(N);
 	     System.out.println("String rep: "+binRep);
@@ -25,6 +26,17 @@ class B{
 	public static void main(String[] args) {
 		int solutions=solution(529);
 		System.out.println(solutions);
-		
+		try {
+			
+		}catch(ArithmeticException e){
+			e.printStackTrace();
+			
+		}catch(RuntimeException e) {
+			
+		}catch(Exception e) {
+			
+		}catch(Throwable e) {
+			
+		}
 	}
 }

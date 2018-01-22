@@ -1,4 +1,4 @@
-package excelreadwrite;
+package com.automation.Excel;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

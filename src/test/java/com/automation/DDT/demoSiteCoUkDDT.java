@@ -1,4 +1,4 @@
-package com.automation.Arrays;
+package com.automation.DDT;
 
 public class demoSiteCoUkDDT {
 

@@ -1,31 +1,33 @@
-package com.automation.JDBC;
+package com.automation.DDT;
 
 import java.sql.SQLException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import utils.Driver;
-import utils.DBUtility;
-import utils.DBUtility.DBType;
+import com.automation.Utils.DBUtility;
+import com.automation.Utils.DBUtility.DBType;
+import com.automation.Utils.Driver;
+
+
 
 
 public class JDBCDDT {
 
 	WebDriver driver;
 
-	@BeforeTest
+	@Before
 	public void gotoApplication() {
-		driver = Driver.getDriver();
+		driver = Driver.getInstance();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.get("https://editor.datatables.net/examples/simple/simple.html");
 	}
